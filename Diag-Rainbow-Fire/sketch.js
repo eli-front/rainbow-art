@@ -9,46 +9,50 @@ let g2Slider;
 let b1Slider;
 let b2Slider;
 
+let alphaSlider;
 
 function setup() {
   let scSize = Math.min(windowWidth, windowHeight - 60);
   createCanvas(scSize, scSize);
   
+  alphaSlider = createSlider(0, 25, 10, 1);
+  alphaSlider.position(5, scSize);
+  alphaSlider.style('width', `${width-10}px`);
+  
   r1Slider = createSlider(1, 50, random(1, 50), 1);
-  r1Slider.position(10, scSize+10);
-  r1Slider.style('width', `${width/2-5}px`);
+  r1Slider.position(5, scSize+15);
+  r1Slider.style('width', `${width/2-10}px`);
   
   r2Slider = createSlider(1, 50, random(1, 50), 1);
-  r2Slider.position(width/2+10, scSize+10);
-  r2Slider.style('width', `${width/2-5}px`);
+  r2Slider.position(width/2+5, scSize+15);
+  r2Slider.style('width', `${width/2-10}px`);
   
   g1Slider = createSlider(1, 50, random(1, 50), 1);
-  g1Slider.position(10, scSize+25);
-  g1Slider.style('width', `${width/2-5}px`);
+  g1Slider.position(5, scSize+30);
+  g1Slider.style('width', `${width/2-10}px`);
   
   g2Slider = createSlider(1, 50, random(1, 50), 1);
-  g2Slider.position(width/2+10, scSize+25);
-  g2Slider.style('width', `${width/2-5}px`);
+  g2Slider.position(width/2+5, scSize+30);
+  g2Slider.style('width', `${width/2-10}px`);
   
   b1Slider = createSlider(1, 50, random(1, 50), 1);
-  b1Slider.position(10, scSize+40);
-  b1Slider.style('width', `${width/2-5}px`);
+  b1Slider.position(5, scSize+45);
+  b1Slider.style('width', `${width/2-10}px`);
   
   b2Slider = createSlider(1, 50, random(1, 50), 1);
-  b2Slider.position(width/2+10, scSize+40);
-  b2Slider.style('width', `${width/2-5}px`);
+  b2Slider.position(width/2+5, scSize+45);
+  b2Slider.style('width', `${width/2-10}px`);
   
-  randomSeed();
   background(255, 255, 255);
   noStroke();
 }
 
 function draw() {
-  background(255, 255, 255, 10);
+  background(255, 255, 255, alphaSlider.value());
   
   if (count >= height*2) {
     count = 0;
-    randomSeed();
+    noiseSeed(random(50));
   }
   
   let size;
