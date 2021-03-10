@@ -7,6 +7,6 @@ All pieces are static webpages, but may require a http server due to file privac
 
 To setup a local server run `python -m http.server 8000` in your terminal (make sure to use python3)
 
-After setting up the server go to (http://localhost:8000)[http://localhost:8000] and locate the rainbow-art directory & the subdirectory of the project you would like to see. ex: http://localhost:8000/path/to/rainbow-art/Rainbow-Bounce-Balls
+After setting up the server go to [localhost:8000](http://localhost:8000) and locate the rainbow-art directory & the subdirectory of the project you would like to see. ex: http://localhost:8000/path/to/rainbow-art/Rainbow-Bounce-Balls
 
 Note: Google Chrome usually gives the best functionality & frame rate.
