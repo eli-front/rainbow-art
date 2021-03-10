@@ -66,8 +66,8 @@ function draw() {
     nums = [...Array(size).keys()];
   }
   for (let i = nums[0]; i <= nums[nums.length-1]; i++) {
-      fill(noise(i/r1Slider.value(), (count-i-1)/r2Slider.value())*255, noise(i/g1Slider.value(), (count-i-1)/g2Slider.value())*255, noise(i/b1Slider.value(), (count-i-1)/b2Slider.value())*255);
-      square(i, count-i-1, 1);
+      fill(noise(i/r1Slider.value(), (count-i-1)/r2Slider.value())*255, noise(i/g1Slider.value(), (count-i)/g2Slider.value())*255, noise(i/b1Slider.value(), (count-i)/b2Slider.value())*255);
+      square(i, count-i, 1);
   }
   
   count++;
