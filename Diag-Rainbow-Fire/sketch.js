@@ -52,7 +52,7 @@ function draw() {
   
   if (count >= height*2) {
     count = 0;
-    noiseSeed(random(50));
+    noiseSeed(random(999));
   }
   
   let size;
