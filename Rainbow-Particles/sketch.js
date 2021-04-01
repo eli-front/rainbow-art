@@ -1,6 +1,6 @@
 let balls = [];
 const connectionVal = 2;
-const ballCount = 50;
+const ballCount = 100;
 const alphaValue =  30;
 
 function setup() {
