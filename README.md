@@ -1,7 +1,10 @@
 # rainbow-art
+
 Some fun rainbow art, which I made with p5.js
 
 ## links to view each piece of rainbow-art
+
+[Rainbow-Waves](https://eli-front.github.io/rainbow-art/Rainbow-Waves/index.html)
 
 [Rainbow-Particles](https://eli-front.github.io/rainbow-art/Rainbow-Particles/index.html)
 
@@ -18,7 +21,6 @@ Some fun rainbow art, which I made with p5.js
 [Rainbow-Print](https://eli-front.github.io/rainbow-art/Rainbow-Print/index.html)
 
 [Rainbow-Shift](https://eli-front.github.io/rainbow-art/Rainbow-Shift/index.html)
-
 
 ## run locally
 
