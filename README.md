@@ -4,7 +4,7 @@ Some fun rainbow art, which I made with p5.js
 
 ## links to view each piece of rainbow-art
 
-[Rainbow-Waves](https://eli-front.github.io/rainbow-art/Rainbow-Waves/index.html)
+[Rainbow-Waves](https://eli-front.github.io/rainbow-art/Rainbow-Waves)
 
 [Rainbow-Particles](https://eli-front.github.io/rainbow-art/Rainbow-Particles/index.html)
 
